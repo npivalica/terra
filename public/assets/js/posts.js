@@ -14,7 +14,6 @@ function loadMoreProducts(e){
     let sortValue = $("input[name=btnPrice]:checked").val();
     // e.preventDefault();
     let page = $(this).data("page");
-    // POZVATI ODGOVARAJUCU FUNKCIJU
 }
 
 function sortAndFilter() {
@@ -23,7 +22,7 @@ function sortAndFilter() {
     $.each($("input[name='categories']:checked"), function(){
         categories.push($(this).val());
     });
- // POZVATI ODGOVARAJUCU FUNKCIJU
+
 }
 
 function getProducts(page, categories, sortValue){
@@ -36,7 +35,7 @@ function getProducts(page, categories, sortValue){
         },
         dataType: "",
         success: function (response) {
-            // POZVATI ODGOVARAJUCU FUNKCIJU
+
             if(caller == 'sortAndFilter'){
                 changePagination(response.last_page, response.current_page);
             }

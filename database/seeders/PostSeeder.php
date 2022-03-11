@@ -23,7 +23,6 @@ class PostSeeder extends Seeder
                 'title' => $faker->word,
                 'description' => $faker->paragraph(2),
                 'content' => $faker->paragraph(20),
-                // 'price' => mt_rand(5*10, 1000*10) / 10, //mt_rand ($min*10, $max*10) / 10
                 'image' => 'default.png',
                 'user_id' => 1,
                 'editor_pick' => 0,

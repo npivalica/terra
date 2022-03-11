@@ -32,7 +32,6 @@
             <td>{{  date("F, d Y h:i", strtotime($category->created_at)) }}</td>
 
             <td>
-                {{-- <a href="{{ route('categories.edit') }}" class="btn btn-dark"><i class="fas fa-post-edit"></i> Add</a> --}}
                 <form action="{{ route('categories.destroy', $category) }}" method="POST">
                     @csrf
                     @method('DELETE')

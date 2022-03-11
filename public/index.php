@@ -48,7 +48,7 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 
 $app->bind('path.public', function() {
     return __DIR__;
-}); //mozda ce smetati u lokalu, mora za hosting
+});
 
 $kernel = $app->make(Kernel::class);
 
